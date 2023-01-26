@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/images/LogoAlura.svg" alt="Logo Alura" class="LogoAlura">
+        <h1 class="titulo1">Encriptador de Texto</h1>
+        <h1 class="titulo2">Alura Challenge ONE | Sprint 01</h1>
+
+    </header>
+    <main>
+        <form class="MainForm">
+            <div class="MainInput">
+                <textarea class="areaInput" id="textoIngresado" placeholder="Ingrese el texto que desa Encriptar o Desencriptar Aqui...!" ></textarea>
+                    <div class="btnsAreaInput">
+                    <button class="btnEnc" id="botonEncriptar" type="button">Encriptar</button>
+                    <button class="btnDesnc" id="botonDesencriptar" type="button">Desencriptar</button>
+                    <button class="btnDel" id="botonBorrar" type="button">Borrar Todo</button>
+                </div>
+            </div>
+                
+            <div class="MainOutput">
+                <div class="areaOuput" id="textoResultado"> ... </div>
+                <div class="textoTip" id="TextoTipOup">Ningun mensaje fue encontrado.</div>
+                <div class="areaImgRes" id="ImgRes">
+                    <img src="assets/images/sin_resultados1.png" alt="sin resultado" class="ImgNotResult" id="ImgNotRes">
+                </div>
+                <div class="msgCop" id="MsgTCopiado">Texto Copiado!</div>
+                <div class="btnsAreaOutput">
+                    <button class="btnCopiar" id="botonCopiar" type="button">Copiar Texto</button>
+                </div>
+
+            </div>         
+        </form>
+            
+
+    </main>
+    <footer class="footer">
+        <div class="footerElemts">
+          <a href="https://www.aluracursos.com/" target="_blank"><img src="assets/images/logo-aluraLatam.svg" alt="Logo Alura Latam" class="logoAluraLatam"></a>
+          <a href="https://www.oracle.com/ar/education/oracle-next-education" target="_blank"><img src="assets/images/Logo_ONE_BN.png" alt="Logo ONE" class="logoOracleOne"></a>
+          <a href="https://github.com/AlejandroMedina-Ar" target="_blank"><img src="assets/images/github1.png" alt="Logo Github" class="logoGithub"></a>
+          <a href="https://www.linkedin.com/in/oscar-alejandro-medina-ar" target="_blank"><img src="assets/images/Logo-LinkedIn_BN.png" alt="Logo LinkedIN" class="logoLinkedin"></a>
+        </div>
+       <div class="infoDev">
+        <p class="cc"> &copy; Copyright 2023 | Desarrollado por <a href="https://www.linkedin.com/in/oscar-alejandro-medina-ar" target="_blank">Alejandro Medina</a></p>
+       </div>  
+
+    </footer>
+
+<script src="scriptEncrip.js"></script>
+</body>
+</html>
