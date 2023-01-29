@@ -49,15 +49,26 @@ function ChequeoRes() {
   }
 }
 
+function transformarTexto(text) {
+  text = text.toLowerCase();
+  text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return text;
+}
+
+const textarea = document.getElementById("textoIngresado");
+textarea.addEventListener("input", function() {
+  textarea.value = transformarTexto(textarea.value);
+});
+
 function copiarTexto() {
   const elemento = document.getElementById("textoResultado");
   navigator.clipboard.writeText(elemento.innerText);
   
-  document.getElementById("MsgTCopiado").classList.add("show"); // Mostrar el div que contiene el mensaje
+  document.getElementById("MsgTCopiado").classList.add("show"); 
   
-  setTimeout(function() {                                         // Utilizar setTimeout para ocultar el div después de 3 o 4 segundos                       
+  setTimeout(function() {                                                  
       document.getElementById("MsgTCopiado").classList.remove("show"); 
-  }, 3000); // 3000 milisegundos = 3 segundos
+  }, 3000); // 
 }
 
 function borrarTexto() {
@@ -67,23 +78,23 @@ function borrarTexto() {
   
 }
 
-const botonEncriptar = document.getElementById("botonEncriptar");  // Obtiene el botón de encriptar 
-const formulario = document.forms[0];                              // Obtiene el formulario
+const botonEncriptar = document.getElementById("botonEncriptar");  
+const formulario = document.forms[0];                              
  
-botonEncriptar.addEventListener("click", function() {              // Agrega un event listener al botón de encriptar y ejecuta la función encriptar
-    const textoIngresado = formulario["textoIngresado"].value;    // Obtiene el valor del campo de texto ingresado
-    const textoEncriptado = encriptar(textoIngresado);            // Encripta el texto     
-    document.getElementById("textoResultado").innerHTML = textoEncriptado;  // Muestra el texto encriptado en el campo de resultado
+botonEncriptar.addEventListener("click", function() {             
+    const textoIngresado = formulario["textoIngresado"].value;    
+    const textoEncriptado = encriptar(textoIngresado);             
+    document.getElementById("textoResultado").innerHTML = textoEncriptado;  
     ChequeoRes();
 
   });
         
-const botonDesencriptar = document.getElementById("botonDesencriptar"); // Obtiene el botón de desencriptar
+const botonDesencriptar = document.getElementById("botonDesencriptar"); 
  
-botonDesencriptar.addEventListener("click", function() {      // Agrega un event listener al botón de desencriptar y ejecuta la funcion
-  const textoEncrypt = formulario["textoIngresado"].value;    // Obtiene el valor del campo de texto ingresado.
-  const textoDesencriptado = desencriptar(textoEncrypt);      // Desencripta el texto
-  document.getElementById("textoResultado").innerHTML = textoDesencriptado;  // Muestra el texto desencriptado en el campo de texto resultado
+botonDesencriptar.addEventListener("click", function() {    
+  const textoEncrypt = formulario["textoIngresado"].value;    
+  const textoDesencriptado = desencriptar(textoEncrypt);      
+  document.getElementById("textoResultado").innerHTML = textoDesencriptado;  
   ChequeoRes();
   
 });
