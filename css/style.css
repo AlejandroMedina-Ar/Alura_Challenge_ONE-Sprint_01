@@ -23,9 +23,8 @@ body {
     border-radius: 26px;
     align-items: center;
     justify-content: flex-start;
-    width: 68%;
-    margin-bottom: 2px;
-    margin-top: 5px;
+    width: 65%;
+    
 }
   
 .titulo2 {
@@ -54,18 +53,19 @@ body {
     flex-wrap: nowrap;
        
     align-items: center;
-    justify-content: center;
-    width: 65%;
+    /* justify-content: center; */
+    width: 64%;
 }
 
 .flex-container-areaOutput {
     background: #444B6E;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
    
     border-radius: 26px;
     align-items: center;
+    justify-items: center;
     width: 33%;
     height: 41rem;
     z-index: 1;
@@ -74,7 +74,7 @@ body {
 .flex-container-btnsAreaInput {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   
     align-items: flex-start;
     width: 95%;
@@ -91,8 +91,8 @@ body {
     
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 71%;
+    margin-left: 7rem;
+    
 }
 
 .flex-container-footer {
@@ -120,30 +120,25 @@ body {
    
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 /* Seccion diseño Elmentos area Header */
 
 .LogoAlura {
+    margin-top: 10px;
     width: 70px;
     height: 48px;
 }   
 
-.titulo1 {
+.titulo1, .titulo2 {
     color: #47E5BC;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 400;
+    margin-top: 1rem;
 }
      
-.titulo2 {
-    color: #47E5BC;
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-}
-
 /* Seccion diseño Elmentos area input */
 
 .areaInput {
@@ -172,9 +167,17 @@ body {
 }
 
 .advertencia {
-    position: absolute;
-    top: 68%;
-    left: 17.5%;
+    width: 90%;
+    /* border: 1px solid black; */
+    /* align-self: baseline;  */ 
+    margin-left: 0.5rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    z-index: 5;
+    align-items:flex-start;
+    justify-content: flex-start;
+    
+    
 }
    
 .advMsg {
@@ -183,6 +186,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+    
 }    
 
  /* Seccion diseño Elmentos area output */
@@ -198,11 +202,24 @@ body {
      padding: 20px;
   }
      
- .ImgNotResult {
+
+  .areaImgRes{
+     
+    /*  border: 2px solid black; */
+     z-index: 5;
+     width: 382px;
+     height: 282px;
+     /* top: 50px; */
+     align-self: center;
+     justify-self: baseline;
+     margin-left: 2rem;
+  }
+
+ /* .ImgNotResult {
      position: absolute;
      top: 51%;
      transform: translate(-50%, -50%);
- }  
+ }   */
  
  .textoTip {
      width: 340px;
@@ -212,8 +229,9 @@ body {
      font-size: 26px;
      font-weight: 400;
  
-     position: absolute;
-     top: 25%;
+     align-self: center;
+     justify-self: baseline;
+     margin-left: 4.5rem;
  }
      
 .msgCop {
@@ -224,9 +242,12 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
     font-weight: 800;
+
+     align-self: center;
+     justify-self: baseline;
+     margin-left: 7rem;
+       
     
-    position: absolute;
-    top: 60%;
 }    
 
 .btnEnc, .btnDesnc, .btnDel, .btnCopiar {
@@ -333,358 +354,5 @@ a:hover img {
     color: aqua;
 }
 
-/* Seccion Medio query */
-
-/* /////////////////// 1700 ////////////////////////////////////  */
-
-@media screen and (max-width: 1700px){
-    .areaOuput {
-        width: 240px;
-        padding: 20px;
-                  
-       
-         
-    }       
-}
-
-/* ///////////////////  1500   /////////////////// */
-
-@media screen and (max-width: 1500px){
-    .areaOuput {
-        width: 200px;
-        padding: 20px;
-                  
-       
-         
-    }       
-
-    .ImgNotResult {
-
-        width: 300px;
-        height: 220px;
-        
-    } 
-
-    .textoTip {
-        width: 300px;
-        height: 80px;
-        color:#47E5BC;
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-            
-    }
-
-    .flex-container_Header {
-       
-        width: 60%;
-        margin-bottom: 1px;
-        margin-top: 2px;
-        align-items: center;
-        
-    }
-
-    .titulo1, .titulo2 {
-        font-size: 24px;
-        font-weight: 400;
-    }
-         
-    .LogoAlura {
-        width: 60px;
-        height: 32px;
-    }
-
-    .advertencia {
-        position: absolute;
-        top: 70%;
-        left: 20%;
-    }
-}
-
-/* ////////////////// 1280 ///////////////////////////////////// */
-
-@media screen and  (max-width: 1290px){
-
-    .flex-container-content {
-              
-        width: 850px;
-        height: 85%;
-        padding: 20px;
-    }
-
-    .flex-container-areaInput {
-        width: 98%;
-    }
-
-    .flex-container-areaOutput {
-        background: #444B6E;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-       
-        border-radius: 26px;
-        align-items: center;
-        width: 93%;
-        height: 25rem;
-        z-index: 1;
-    }
-
-    .areaOuput {
-        width: 740px;
-        padding: 20px;
-                  
-    } 
-             
-    .ImgNotResult {
-
-        width: 300px;
-        height: 220px;
-
-        position: absolute;
-        top: 115%;
-        
-    }  
-
-    .flex-container-btnsAreaOutput {
-        display: flex;
-        flex-direction: column;
-        
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 127%;
-    }
-
-    .msgCop {
-        width: 210px;
-        height: 80px;
-        color:#47E5BC;
-        text-decoration: solid;
-        font-family: 'Oswald', sans-serif;
-        font-size: 36px;
-        font-weight: 800;
-        
-        position: absolute;
-        top: 115%;
-    } 
 
 
-    .textoTip {
-        width: 300px;
-        height: 80px;
-        color:#47E5BC;
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-
-        position: absolute;
-        top: 99%;
-            
-    } 
-    
-    .advertencia {
-        position: absolute;
-        top: 72%;
-        left: 25%;
-    }
-       
-    .advMsg {
-        color:  #47E5BC; 
-        font-size: 14px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: 'Oswald', sans-serif;
-        
-    }
-
-    .flex-container_Header {
-       
-        width: 60%;
-        margin-bottom: 1px;
-        margin-top: 2px;
-        align-items: center;
-        
-    }
-
-    .titulo1, .titulo2 {
-        font-size: 22px;
-        font-weight: 400;
-    }
-         
-    .LogoAlura {
-        width: 60px;
-        height: 32px;
-    }
-   
-    
-
-
-}
-
-/* //////////////////////////////////////////// */
-
-@media screen and  (max-width: 375px){
-
-    .flex-container-content {
-
-        flex-direction: column;
-        align-items: center;
-              
-        width: 350px;
-        height: 65%;
-        padding: 15px;
-    }
-    .flex-container_Header {
-        display: flex;
-        flex-direction: column;
-                 
-        align-items: center;
-        justify-content: flex-start;
-        width: 60%;
-       /*  margin-bottom: 2px;
-        margin-top: 5px; */
-    }
-
-
-    .flex-container-areaInput {
-        width: 96%;
-    }
-
-    .areaInput {
-        background-color: #A2A3BB;
-        color:   #3D315B;
-        font-size: 20px;
-        font-weight: 400;
-        font-family: 'Roboto', sans-serif;
-       
-        width: 90%;
-        height: 350px;
-        padding: 20px;
-        border-radius: 22px;
-        resize: none;
-       
-       }
-
-    .flex-container-areaOutput {
-        background: #444B6E;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-       
-        border-radius: 26px;
-        align-items: center;
-        width: 95%;
-        height: 25rem;
-        z-index: 1;
-    }
-
-    .areaOuput {
-        width: 300px;
-        padding: 20px;
-                  
-    } 
-             
-    .ImgNotResult {
-
-        width: 290px;
-        height: 190px;
-
-        position: absolute;
-        top: 95%;
-        
-    }  
-
-    .flex-container-btnsAreaOutput {
-        display: flex;
-        flex-direction: column;
-        
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 105%;
-    }
-
-    .msgCop {
-        width: 210px;
-        height: 80px;
-        color:#47E5BC;
-        text-decoration: solid;
-        font-family: 'Oswald', sans-serif;
-        font-size: 36px;
-        font-weight: 800;
-        
-        position: absolute;
-        top: 98%;
-    } 
-
-
-    .textoTip {
-        width: 300px;
-        height: 80px;
-        color:#47E5BC;
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-
-        position: absolute;
-        top: 80%;
-            
-    } 
-    
-    .advertencia {
-        position: absolute;
-        top: 50%;
-        left: 12%;
-    }
-       
-    .advMsg {
-        color:  #47E5BC; 
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: 'Oswald', sans-serif;
-        
-    }
-
-    .flex-container_Header {
-       
-        width: 50%;
-        margin-bottom: 1px;
-        margin-top: 2px;
-        align-items: center;
-        
-    }
-
-    .titulo1, .titulo2 {
-        margin-top: 4px;
-        font-size: 18px;
-        font-weight: 400;
-    }
-         
-    .LogoAlura {
-        position: absolute;
-        top: 1%;
-        left: 5%;
-        width: 70px;
-        height: 48px;
-        margin-top: 2px;
-    }
-   
-    .btnEnc, .btnDesnc, .btnDel, .btnCopiar {
-        text-transform: uppercase;
-        background-color: #47E5BC;
-        width: 180px;
-        height: 35px;
-        border-radius: 20px;
-        border-color:#3D315B;
-        border-width: 3px;
-        
-        font-family: 'Oswald', sans-serif;
-        font-size: 16px;
-        font-weight: 800;
-    }
-
-    
-
-
-}

@@ -41,10 +41,10 @@ function ChequeoRes() {
   if (text === "..." || text === "") {
     initialImage.style.display = "block";
     initialmsg.style.display = "block";
-    initialbtnC.style.display ="none";
+    initialbtnC.style.display ="none";  
   } else {
-    initialImage.style.display = "none";
-    initialmsg.style.display = "none";
+    initialImage.style.display = "none";  
+    initialmsg.style.display = "none";  
     initialbtnC.style.display ="block";
   }
 }
@@ -68,7 +68,7 @@ function copiarTexto() {
   
   setTimeout(function() {                                                  
       document.getElementById("MsgTCopiado").classList.remove("show"); 
-  }, 3000); // 
+  }, 2200); // 
 }
 
 function borrarTexto() {
