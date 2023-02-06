@@ -10,9 +10,11 @@ body {
 
 .flexbox_Container-Main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
  }
 
 .flex-container_Header {
@@ -36,37 +38,36 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
    
     border-radius: 26px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     
-    width: 70%;
-    height: 85%;
-    padding: 20px;
+    width: 1280px;
+    /* height: 670px; */
+    padding: 1rem;
 }
 
 .flex-container-areaInput {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-       
     align-items: center;
-    /* justify-content: center; */
-    width: 64%;
+    width: 820px;
 }
+       
+    
 
 .flex-container-areaOutput {
     background: #444B6E;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
    
     border-radius: 26px;
-    align-items: center;
+    align-items: center; 
     justify-items: center;
-    width: 33%;
+    width: 440px;
     height: 41rem;
     z-index: 1;
 }
@@ -91,7 +92,8 @@ body {
     
     align-items: center;
     justify-content: center;
-    margin-left: 7rem;
+    justify-self: baseline;
+    margin-top: 1rem;
     
 }
 
@@ -181,7 +183,8 @@ body {
 }
    
 .advMsg {
-    color:  #47E5BC; 
+    /* color:  #47E5BC;  */
+    color: red;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -205,21 +208,18 @@ body {
 
   .areaImgRes{
      
-    /*  border: 2px solid black; */
+    
      z-index: 5;
-     width: 382px;
-     height: 282px;
+     width: 320px;
+     height: 270px;
      /* top: 50px; */
-     align-self: center;
-     justify-self: baseline;
-     margin-left: 2rem;
+     align-items: center;
+     justify-content: center;
+     margin-top: 3rem;
+     
+     
   }
 
- /* .ImgNotResult {
-     position: absolute;
-     top: 51%;
-     transform: translate(-50%, -50%);
- }   */
  
  .textoTip {
      width: 340px;
@@ -230,8 +230,8 @@ body {
      font-weight: 400;
  
      align-self: center;
-     justify-self: baseline;
-     margin-left: 4.5rem;
+     justify-self: center;
+    /*  margin-left: 4.5rem; */
  }
      
 .msgCop {
@@ -245,7 +245,7 @@ body {
 
      align-self: center;
      justify-self: baseline;
-     margin-left: 7rem;
+     margin-top: 4rem;
        
     
 }    
