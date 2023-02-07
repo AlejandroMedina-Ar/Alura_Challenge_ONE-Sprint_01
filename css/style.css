@@ -14,74 +14,63 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.5em;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
  }
 
 .flex-container_Header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
-    border-radius: 26px;
-    align-items: center;
-    justify-content: flex-start;
-    width: 65%;
-    
+    margin-top: 0.5em;
+    width: 100%;
+    height: 4.5rem;
 }
-  
-.titulo2 {
-    margin-left: auto;
-}
-
+      
 .flex-container-content {
     background: #3d315b;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.5rem;
-   
+    gap: 0.5em;
     border-radius: 26px;
     align-items: center;
     justify-content: center;
-    
-    width: 1280px;
-    /* height: 670px; */
     padding: 1rem;
+    width: 100%;
 }
 
 .flex-container-areaInput {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 820px;
+    width: 66%;
 }
-       
-    
 
 .flex-container-areaOutput {
     background: #444B6E;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-   
     border-radius: 26px;
     align-items: center; 
     justify-items: center;
-    width: 440px;
+    width: 33%;
     height: 41rem;
     z-index: 1;
 }
-
+   
 .flex-container-btnsAreaInput {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  
     align-items: flex-start;
     width: 95%;
     margin-top: 10px;
 }
-
+  
 .btnDel {
    margin-left: auto;
 } 
@@ -89,48 +78,58 @@ body {
 .flex-container-btnsAreaOutput {
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     justify-content: center;
     justify-self: baseline;
     margin-top: 1rem;
-    
-}
+}   
 
 .flex-container-footer {
     display: flex;
     flex-direction: column;
-   
     align-items: center;
     justify-content: center;
     width: 70%;
+  /*   border: 1px solid white; */
 }
-
+   
 .flex-container-footerElemts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-       
     justify-content:space-around;
     margin-top: 15px;
     width: 65%;
 }
-
+     
 .flex-container-infoDev {
     display: flex;
     flex-direction: column;
-   
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-}
+}  
 
 /* Seccion diseño Elmentos area Header */
 
+.headerlogo {
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+}
+    
+.headerText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 91%;
+}
+   
 .LogoAlura {
-    margin-top: 10px;
-    width: 70px;
-    height: 48px;
+   /*  margin-top: 10px; */
+    width: 95px;
+    height: 65px;
 }   
 
 .titulo1, .titulo2 {
@@ -170,8 +169,6 @@ body {
 
 .advertencia {
     width: 90%;
-    /* border: 1px solid black; */
-    /* align-self: baseline;  */ 
     margin-left: 0.5rem;
     margin-top: -3rem;
     margin-bottom: 2rem;
@@ -205,35 +202,28 @@ body {
      padding: 20px;
   }
      
-
   .areaImgRes{
-     
+      z-index: 5;
+      width: 320px;
+      height: 270px;
+      /* top: 50px; */
+      align-items: center;
+      justify-content: center;
+      margin-top: 3rem;
+      
+   }  
     
-     z-index: 5;
-     width: 320px;
-     height: 270px;
-     /* top: 50px; */
-     align-items: center;
-     justify-content: center;
-     margin-top: 3rem;
-     
-     
-  }
-
- 
- .textoTip {
+   .textoTip {
      width: 340px;
      height: 80px;
      color:#47E5BC;
      font-family: 'Oswald', sans-serif;
      font-size: 26px;
      font-weight: 400;
- 
      align-self: center;
      justify-self: center;
-    /*  margin-left: 4.5rem; */
- }
-     
+}
+ 
 .msgCop {
     width: 210px;
     height: 80px;
@@ -242,12 +232,9 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
     font-weight: 800;
-
-     align-self: center;
-     justify-self: baseline;
-     margin-top: 4rem;
-       
-    
+    align-self: center;
+    justify-self: baseline;
+    margin-top: 4rem;
 }    
 
 .btnEnc, .btnDesnc, .btnDel, .btnCopiar {
@@ -258,7 +245,6 @@ body {
     border-radius: 26px;
     border-color:#3D315B;
     border-width: 3px;
-    
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     font-weight: 800;
@@ -274,7 +260,7 @@ body {
     color: white;
     cursor: pointer;
 }
-
+       
 /* Seccion diseño Elmentos Especiales para ocultos */
 
 #botonCopiar {
@@ -304,23 +290,13 @@ body {
 
 /* Seccion diseño Elmentos area footer */
 
-.logoAluraLatam {
+.logoAluraLatam, .logoGithub, .logoLinkedin   {
     width: 70px;
     height: 50px;
 }
 
 .logoOracleOne {
     width: 90px;
-    height: 50px;
-}
-
-.logoGithub {
-    width: 70px;
-    height: 50px;
-}
-
-.logoLinkedin {
-    width: 70px;
     height: 50px;
 }
 
@@ -334,8 +310,8 @@ a:hover img {
     left: 51%;
     top: 96%;
     transform: translate(-50%, -50%);
+    margin-bottom: 10px;
 }
-
 
 .cc {
     color:   #47E5BC;
@@ -353,6 +329,252 @@ a:hover img {
 .cc a:hover {
     color: aqua;
 }
+
+
+/* Seccion para media querys ///////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1200px) {
+  
+    .flexbox_Container-Main {
+       
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+     }    
+    
+}
+
+@media screen and (max-width: 1000px) {
+  
+    .flexbox_Container-Main {
+       
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+     }   
+    
+}
+
+
+
+
+@media screen and (max-width: 405px) {
+  
+    .flexbox_Container-Main {
+
+        width: 400px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        
+
+     }
+
+     .flex-container_Header {
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+        margin-bottom: 5px;      
+       
+    }
+
+    .headerlogo {
+    
+        align-items: center;
+        justify-content: flex-start;
+        width: 60px;
+        height: 48px;
+        /* border: 1px solid white; */
+    }
+    
+    .headerText {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 80%;
+        /* border: 1px solid white; */
+        
+    }
+
+    .flex-container-content {
+       width: 99%;
+       border-radius: 10px;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 0.5em;
+    }
+    
+    .flex-container-areaInput {
+        width: 100%;
+        border-radius: 10px;
+       /*  border: 1px solid white; */
+        height: 28rem;
+    }
+
+    .flex-container-areaOutput {
+             
+        border-radius: 10px;
+        width: 100%;
+        height: 28rem;
+        z-index: 1;
+       /*  border: 1px solid white; */
+    }
+
+    .titulo1, .titulo2 {
+        font-size: 22px;
+        font-weight: 400;
+            
+        
+    }
+
+    .LogoAlura {      
+        width: 70px;
+        height: 48px;
+    }   
+
+  
+    .flex-container-btnsAreaInput {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 95%;
+        margin-top: 5px;
+             
+    }
+
+    .btnDel {
+        margin-left: 0px;
+     } 
+
+     .btnEnc, .btnDesnc, .btnDel, .btnCopiar {
+        width: 105px;
+        height: 42px;
+        border-radius: 10px;
+        border-color:#3D315B;
+        border-width: 2px;
+               
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .areaInput::placeholder {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    .advMsg {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .areaImgRes{
+        z-index: 5;
+        width: 310px;
+        height: 225px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+       /*  border: 1px solid white; */
+        
+     }  
+
+     .ImgNotResult {
+        width: 260px;
+        height: 220px;
+     }
+      
+     .textoTip {
+       width: 300px;
+       height: 60px;
+       margin-left: 10px;
+       font-size: 22px;
+       font-weight: 400;
+       align-self: center;
+       justify-self: center;
+  }
+   
+/*   #botonCopiar {
+    display: block;
+    z-index: 10;
+} */
+
+
+  .flex-container-btnsAreaOutput {
+    /* border: 1px solid white; */
+    width: 130px;
+    height: 60px;
+    align-self: center;
+    margin-top: 20px;
+    z-index: 10;
+}   
+
+
+
+  .msgCop {
+      margin-top: -80px;
+      width: 210px;
+      height: 80px;
+      color:#47E5BC;
+      text-decoration: solid;
+      font-family: 'Oswald', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      align-self: center;
+      justify-self: baseline;
+     
+  }
+
+
+  .logoAluraLatam, .logoGithub, .logoLinkedin {
+    width: 40px;
+    height: 30px;
+  }
+
+  .logoOracleOne {
+    width: 55px;
+    height: 30px;
+  }
+
+  .flex-container-footer {
+    justify-content: space-between;
+    width: 95%;
+ }
+  
+  
+        
+        
+
+
+   
+    
+       
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
 
 
 
