@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,65 +13,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Encriptador de Texto</title>
 </head>
+
 <body>
-<div class="flexbox_Container-Main">
-    <header class="flex-container_Header">
-        <div class="headerlogo">
-            <img src="assets/images/LogoAlura.svg" alt="Logo Alura" class="LogoAlura">
+
+
+    <div class="grid__Container-Main">
+
+    </div>
+
+    <header class="header__container">
+
+        <div class="header__logo">
+            <img src="assets/images/LogoAlura.svg" alt="Logo Alura" class="header__logo-alura">
         </div>
-
-
-        <div class="headerText">
-        <p class="titulo1">Encriptador de Texto</p>
-        <p class="titulo2">Alura Challenge ONE | Sprint 01</p>
+        <div class="header__text-1">
+            <p class="header__text-titulo1">Encriptador de Texto</p>
         </div>
-
+        <div class="header__text-2">
+            <p class="header__text_titulo2">Alura Challenge ONE | Sprint 01</p>
+        </div>
 
     </header>
-    <form class="flex-container-content">
-        <div class="flex-container-areaInput">
-                <textarea class="areaInput" id="textoIngresado" placeholder="Ingrese el texto que desa Encriptar o Desencriptar Aqui...!" ></textarea>
-                <div class="advertencia">
-                    <p class="advMsg"> &#9888; Ingresa Solo letras minúsculas y sin acentos o caracteres especiales...!</p>
-                </div>
-                 <div class="flex-container-btnsAreaInput">
-                 <button class="btnEnc" id="botonEncriptar" type="button">Encriptar</button>
-                 <button class="btnDesnc" id="botonDesencriptar" type="button">Desencriptar</button>
-                 <button class="btnDel" id="botonBorrar" type="button">Borrar Todo</button>
+
+    <main class="main__container">
+
+        <div class="area__input">
+
+            <form class="area__input-form">
+                <textarea class="area__input-textarea" id="textoIngresado"
+                    placeholder="Ingrese el texto que desa Encriptar o Desencriptar Aqui...!"></textarea>
+            </form>
+
+
+            <div class="area__input-advertencia">
+                <p class="advertencia__pmsg"> &#9888; Ingresa Solo letras minúsculas y sin acentos o caracteres
+                    especiales...!</p>
             </div>
+
+            <div class="area__input-botones">
+                <button class="input__btn-Enc" id="botonEncriptar" type="button">Encriptar</button>
+                <button class="input__btn-Desnc" id="botonDesencriptar" type="button">Desencriptar</button>
+                <button class="input__btn-Del" id="botonBorrar" type="button">Borrar Todo</button>
+            </div>
+
         </div>
 
-        <div class="flex-container-areaOutput">
-                  <div class="areaOuput" id="textoResultado"> ... </div>
-                  <div class="textoTip" id="TextoTipOup">Ningun mensaje fue encontrado.</div>
-                  <div class="areaImgRes" id="ImgRes">
-                      <img src="assets/images/sin_resultados1.png" alt="sin resultado" class="ImgNotResult" id="ImgNotRes">
-                  </div>
-                  <div class="msgCop" id="MsgTCopiado">&nbsp;Texto Copiado!</div>
-                  <div class="flex-container-btnsAreaOutput">
-                      <button class="btnCopiar" id="botonCopiar" type="button">Copiar Texto</button>
-                    </div>
+
+        <div class="area__output">
+
+            <div class="area__output-textoResultado" id="textoResultado"> ......
+            </div>
+
+            <div class="area__output-textoTip" id="TextoTipOup">
+                <p class="output__textoTip">Ningun mensaje fue encontrado.</p>
+            </div>
+
+            <div class="area__output-imgRes" id="ImgRes">
+                <img src="assets/images/sin_resultados1.png" alt="sin resultado" class="output__imgNotResult"
+                    id="ImgNotRes">
+            </div>
+
+            <div class="area__output-mensajeTextoCopiado" id="MsgTCopiado">
+                <p class="output__mensajeTextoCopiado">Texto Copiado!</p>
+            </div>
+
+            <div class="area__output-botones">
+                <button class="output__btn-copiar" id="botonCopiar" type="button">Copiar Texto</button>
+            </div>
+
+
         </div>
 
-    </form>
-    <footer class="flex-container-footer">
-        <div class="flex-container-footerElemts">
-          <a href="https://www.aluracursos.com/" target="_blank"><img src="assets/images/logo-aluraLatam.svg" alt="Logo Alura Latam" class="logoAluraLatam"></a>
-          <a href="https://www.oracle.com/ar/education/oracle-next-education" target="_blank"><img src="assets/images/Logo_ONE_BN.png" alt="Logo ONE" class="logoOracleOne"></a>
-          <a href="https://github.com/AlejandroMedina-Ar" target="_blank"><img src="assets/images/github1.png" alt="Logo Github" class="logoGithub"></a>
-          <a href="https://www.linkedin.com/in/oscar-alejandro-medina-ar" target="_blank"><img src="assets/images/Logo-LinkedIn_BN.png" alt="Logo LinkedIN" class="logoLinkedin"></a>
+    </main>
+
+    <footer class="footer__container">
+
+        <div class="footer__Elementos">
+            <a href="https://www.aluracursos.com/" target="_blank"><img src="assets/images/logo-aluraLatam.svg"
+                    alt="Logo Alura Latam" class="footer__Elemento-logoAluraLatam footer__logos"></a>
+            <a href="https://www.oracle.com/ar/education/oracle-next-education" target="_blank"><img
+                    src="assets/images/Logo_ONE_BN.png" alt="Logo ONE"
+                    class="footer__Elemento-logoOracleOne footer__logos-wide"></a>
+            <a href="https://github.com/AlejandroMedina-Ar" target="_blank"><img src="assets/images/github1.png"
+                    alt="Logo Github" class="footer__Elemento-logoGithub footer__logos"></a>
+            <a href="https://www.linkedin.com/in/oscar-alejandro-medina-ar" target="_blank"><img
+                    src="assets/images/Logo-LinkedIn_BN.png" alt="Logo LinkedIN"
+                    class="footer__Elemento-logoLinkedin footer__logos"></a>
         </div>
-       <div class="flex-container-infoDev">
-        <p class="cc"> &copy; Copyright 2023 | Desarrollado por <a href="https://www.linkedin.com/in/oscar-alejandro-medina-ar" target="_blank">Alejandro Medina</a></p>
-       </div>  
+        <div class="footer__Elemento-infoDev">
+            <p class="cc"> &copy; Copyright 2023 | Desarrollado por <a
+                    href="https://www.linkedin.com/in/oscar-alejandro-medina-ar" target="_blank">Alejandro Medina</a>
+            </p>
+        </div>
     </footer>
-</div>
+    </div>
 
-<script src="scriptEncrip.js"></script>
+    <script src="scriptEncrip.js"></script>
 </body>
+
 </html>
-
-
-                     
-
-                     
