@@ -18,7 +18,7 @@
 
 ###
 
-<h3 align="left"><a href="https://alejandromedina-ar.github.io/Alura_Challenge_ONE-Sprint_01/">Visita el Proyecto Aquí: Encriptador!!!</a></h3>
+<h3 align="left"><a href="https://alejandromedina-ar.github.io/Alura_Challenge_ONE-Sprint_01/" target="_blank">Visita el Proyecto Aquí: Encriptador!!!</a></h3>
 
 ###
 
