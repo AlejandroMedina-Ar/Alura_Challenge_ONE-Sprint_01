@@ -1,0 +1,254 @@
+
+.area__input {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.area__input-textarea {  
+    width: 36dvw;
+    min-height: 34rem;
+    background-color: #A2A3BB;
+    border-radius: 2rem;
+    padding: 20px;
+    color: #3D315B;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    border: 1px black solid;
+    resize: none;
+}
+
+.area__input-textarea::placeholder {
+    color: #444B6E; 
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-family: 'Oswald', sans-serif;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.area__input-advertencia {
+    position: absolute;
+    top: 40rem;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.area__input-botones {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 38dvw;
+    min-height: 5.5rem;
+}
+
+.input__btn-Del {
+    margin-left: auto;
+}
+
+
+
+
+/* -------------  Media Querys ---------------- */
+
+
+
+
+@media screen and (max-width:1378px) {  
+    .area__input-textarea {  
+        width: 35dvw;
+        min-height: 34rem;
+        border-radius: 2rem;
+        font-size: 22px;
+        resize: none;
+    }
+
+    .area__input-textarea::placeholder {
+        font-size: 18px;
+        font-weight: 800;
+    }
+   
+    .area__input-advertencia {
+        font-size: 15px;
+        font-weight: bold;
+    }
+            
+     
+  
+}
+    
+
+@media screen and (max-width:1280px) {  
+    .area__input-textarea::placeholder {
+        font-size: 18px;
+        font-weight: 800;
+    }
+   
+    .area__input-advertencia {
+        text-align: center;
+        width: 25rem;
+        font-size: 16px;
+        font-weight: bold;
+    }
+   
+}
+
+@media screen and (max-width:1124px) {  
+   
+}
+
+@media screen and (max-width:992px) {  
+    .area__input-textarea {  
+        width: 40dvw;
+        font-size: 22px;
+        resize: none;
+    }
+
+    .area__input-advertencia {
+        text-align: center;
+        width: 25rem;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        top: 38rem;
+    }
+
+    
+   
+}
+
+@media screen and (max-width:768px) {  
+
+    .area__input {
+        display: grid;
+        margin-top: 1rem;
+        grid-gap: 0rem;  
+        justify-items: center;
+        align-items: center;
+      
+    }
+
+    .area__input-textarea {  
+        width: 82dvw;
+        min-height: 16rem;
+        border-radius: 2rem;
+        font-size: 20px;
+        resize: none;
+    }
+
+    .area__input-textarea::placeholder {
+        font-size: 17px;
+        font-weight: 800;
+    }
+   
+    .area__input-advertencia {
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        width: 40rem;
+        top: 21rem;
+    }
+           
+    .area__input-botones {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 65dvw;
+        min-height: 3rem;
+    }
+       
+    
+
+   
+}
+
+@media screen and (max-width: 600px) {  
+   
+}
+
+@media screen and (max-width: 480px) { 
+    
+    .area__input-textarea {  
+       
+        font-size: 18px;
+        resize: none;
+    }
+
+    .area__input-textarea::placeholder {
+        font-size: 14px;
+        font-weight: 800;
+    }
+   
+    .area__input-advertencia {
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        width: 20rem;
+        text-align: center;
+        top: 22rem;
+    }
+           
+    .area__input-botones {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70dvw;
+        min-height: 3rem;
+    }
+       
+   
+}
+
+@media screen and (max-width: 420px) {  
+   
+}
+
+@media screen and (max-width: 360px) {  
+
+    .area__input-textarea {  
+        width: 80dvw;
+        font-size: 16px;
+        resize: none;
+    }
+
+    .area__input-advertencia {
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        width: 18rem;
+        text-align: center;
+        top: 19rem;
+    }
+
+    .area__input-botones {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90dvw;
+        min-height: 3rem;
+    }
+
+   
+}
+
+@media screen and (max-width: 320px) {  
+   
+}
+
+
+
+
+
+

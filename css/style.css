@@ -1,84 +1,25 @@
-
-
-
-
-/* -------------------------  ***HEADER START***   -------------------------  */ 
-
-.header__logo-alura {
-    width: 44px;
-    height: 88px;
+body {
+    background-color: #2A2E3F ;
+    box-sizing: border-box;
 }
 
-.footer__logos {
-    width: 70px;
-    height: 50px;
+#ImgNotRes {
+    display: block;
 }
 
-.footer__logos-wide {
-    width: 90px;
-    height: 50px;
+#botonCopiar {
+    display: none;
+}
+   
+#MsgTCopiado {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-
-.header__container {
-    background-color: aquamarine;
-    border: 1px black solid;
+#MsgTCopiado.show {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* -------------------------  ***HEADER END***  -------------------------  */ 
-
-.main__container {
-
-    background-color: darkgoldenrod;
-    border: 1px black solid;
-
-}
-
-
-/* -------------------------  ***TEXT_INPUT START***   -------------------------  */ 
-
-.area__input {
-    background-color: darkgoldenrod;
-    border: 1px black solid;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------  ***TEXT_INPUT END***   -------------------------  */ 
-
-/* -------------------------  ***TEXT_OUTPUT START***   -------------------------  */ 
-.area__output {
-    background-color: cornflowerblue;
-    border: 1px black solid;
-}
-
-
-
-
-
-
-
-/* -------------------------  ***TEXT_OUTPUT END***   -------------------------  */ 
-
-/* -------------------------  ***FOOTER START***   -------------------------  */ 
-
-.footer__container {
-    background-color: darkolivegreen;
-    border: 1px black solid;
-}
-
-
-
-
-/* -------------------------  ***FOOTER END***   -------------------------  */ 

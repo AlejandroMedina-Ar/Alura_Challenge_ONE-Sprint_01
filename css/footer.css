@@ -1,0 +1,195 @@
+
+.footer__container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__Elementos {
+    display: flex;
+    min-width: 35dvw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__Elemento-infoDev {
+    color:   #47E5BC;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.footer__Elemento-infoDev a {
+    text-decoration: none;
+    color: #47E5BC;
+}
+
+.footer__Elemento-infoDev a:hover {
+    color: aqua;
+}
+
+a:hover img {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer__logos {
+    width: 70px;
+    height: 50px;
+}
+
+.footer__logos-wide {
+    width: 90px;
+    height: 50px;
+}
+
+
+
+
+/* -------------  Media Querys ---------------- */
+
+
+
+
+@media screen and (max-width:1378px) {  
+    .footer__logos {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .footer__logos-wide {
+        width: 80px;
+        height: 45px;
+    }
+
+    .footer__Elemento-infoDev {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:1280px) {  
+   
+}
+
+@media screen and (max-width:1124px) {  
+   
+}
+
+@media screen and (max-width:992px) {  
+   
+}
+
+@media screen and (max-width:768px) {  
+
+    .footer__container {
+        display: flex;
+        margin-top: 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__Elementos {
+        display: flex;
+        min-width: 55dvw;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .footer__logos {
+        width: 55px;
+        height: 40px;
+    }
+    
+    .footer__logos-wide {
+        width: 70px;
+        height: 40px;
+    }
+
+    .footer__Elemento-infoDev {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 600px) {  
+   
+}
+
+@media screen and (max-width: 480px) {  
+    .footer__logos {
+        width: 50px;
+        height: 35px;
+    }
+    
+    .footer__logos-wide {
+        width: 65px;
+        height: 35px;
+    }
+
+    .footer__Elemento-infoDev {
+        font-size: 12px;
+        font-weight: 400;
+    }
+   
+}
+
+@media screen and (max-width: 420px) {  
+   
+}
+
+@media screen and (max-width: 360px) {  
+   
+}
+
+@media screen and (max-width: 320px) {  
+   
+}
+
+
+
+/* 
+
+@media screen and (min-width:1280px) {  
+    .footer__logos {
+        width: 60px;
+        height: 40px;
+    }
+    
+    .footer__logos-wide {
+        width: 80px;
+        height: 40px;
+    }
+    
+}
+   
+        */ 
+
+
+
+
+
+
+
+/* 
+
+@media screen and (min-width:360px) {  
+    .footer__logos {
+        width: 10px;
+        height: 30px;
+    }
+    
+    .footer__logos-wide {
+        width: 20px;
+        height: 40px;
+    }
+
+}
+
+ */
