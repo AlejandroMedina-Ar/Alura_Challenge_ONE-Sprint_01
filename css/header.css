@@ -6,8 +6,8 @@
 }
 
 .header__logo-alura {
-    width: 40px;
-    height: 80px;
+    width: 35px;
+    height: 70px;
 }
 
 .header__logo {
@@ -25,7 +25,7 @@
 .header__text-titulo1, .header__text-titulo2 {
     color: #47E5BC;
     font-family: 'Roboto', sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 400;
     margin-top: 1rem;
 }
@@ -48,15 +48,6 @@
     }
 }
 
-
-@media screen and (max-width:1280px) {  
-   
-}
-
-@media screen and (max-width:1124px) {  
-   
-}
-
 @media screen and (max-width:992px) {  
     .header__logo-alura {
         width: 25px;
@@ -67,11 +58,9 @@
         font-weight: 400;
         margin-top: 1rem;
     }
-   
 }
-
+   
 @media screen and (max-width:768px) {  
-
     .header__container {
         height: 45px;
     }
@@ -80,17 +69,16 @@
         width: 20px;
         height: 45px;
     }
+
     .header__text-titulo1, .header__text-titulo2 {
         font-size: 20px;
         font-weight: 400;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
-   
 }
-
-@media screen and (max-width: 600px) {  
    
+@media screen and (max-width: 600px) {  
     .header__container {
         height: 45px;
     }
@@ -99,6 +87,7 @@
         width: 20px;
         height: 45px;
     }
+
     .header__text-titulo1, .header__text-titulo2 {
         font-size: 18px;
         font-weight: 400;
@@ -107,97 +96,81 @@
     }
 }
 
-@media screen and (max-width: 480px) {  
-
+@media screen and (max-width: 560px) {  
     .header__container {
-        
-        
+        margin-bottom: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {  
+    .header__container {
         width: 470px;
-        /* border: 1px red solid; */
         margin-left: auto;
         margin-right: auto;
-        
     }
-    
+     
     .header__logo-alura {
         position: absolute;
         top: 5px;
         left: 7px;
         width: 40px;
         height: 70px;
-        /* border: 1px lime solid; */
-        
     }
-
+        
     .header__text-1 {
        position: absolute;
        top: 10px;
        left: 52px;
-      /*  border: 1px lime solid; */
-
     }
-
+ 
     .header__text-2 {
-
         position: absolute;
         top: 40px;
         left: 52px;
-
-        /* border: 1px lime solid; */
-
     }
-
+       
     .header__text-titulo1, .header__text-titulo2 {
         font-size: 18px;
         font-weight: 400;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
-   
 }
+   
 
 @media screen and (max-width: 420px) {  
-   
-}
+    .header__container {
+        margin-bottom: 2rem;
+    }
+}   
 
 @media screen and (max-width: 360px) {  
     .header__container {
-        
-        
         width: 350px;
-        /* border: 1px red solid; */
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1rem;
-        
     }
-    
+        
     .header__logo-alura {
         position: absolute;
         top: 5px;
         left: 7px;
         width: 30px;
         height: 50px;
-        /* border: 1px lime solid; */
-        
     }
-
+       
     .header__text-1 {
        position: absolute;
        top: 7px;
        left: 48px;
-      /*  border: 1px lime solid; */
-
     }
-
+      
     .header__text-2 {
-
         position: absolute;
         top: 30px;
-        left: 48px;
-
-        /* border: 1px lime solid; */
-
+        left: 48px;       
     }
 
     .header__text-titulo1, .header__text-titulo2 {
@@ -206,61 +179,7 @@
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
-   
 }
-
-@media screen and (max-width: 320px) {  
    
-}
 
 
-/* 
-@media screen and (min-width:1280px) {  
-  
-
-    
- */
-
-
- 
-/* @media screen and (min-width:360px) {  
-
-    .header__container {
-        display: grid;
-        grid-template-columns: 0.2fr 0.6fr 0.5fr 0.8fr 1.3fr;
-        grid-gap: 0.3rem;
-       
-    }
-
-    .header__logo-alura {
-        
-        width: 20px;
-        height: 40px;
-    }
-
-    .header__text-titulo1, .header__text-titulo2 {
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 0.5rem;
-    }
-
-    .header__logo {
-        grid-column: 1 / 2;
-        justify-self: center;
-    }
-    
-    .header__text-1{
-        grid-column: 2 / 3;
-        justify-content: flex-start;
-    
-    }
-    
-    .header__text-2 {
-        grid-column: 3 / 4;
-        justify-self: flex-start;
-    }
-              
-      
-} 
-
- */

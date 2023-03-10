@@ -82,11 +82,9 @@
     .area__output {
         width: 24dvw;
         height: 38.4rem;
-      
     }
-    
 }
-
+      
 @media screen and (max-width:1280px) {
     .area__output-imgRes {
         width: 280px;
@@ -98,7 +96,6 @@
     .output__imgNotResult {
         width: 280px;
         height: 240px;
-
     }
 
     .output__textoTip {
@@ -113,22 +110,13 @@
     }  
 }
 
-
-   
-
-@media screen and (max-width:1124px) {  
-   
-}
-
 @media screen and (max-width:992px) {  
-    
     .area__output {
         width: 30dvw;
         height: 38.4rem;
         margin-top: 1.2rem;
-      
     }
-
+    
     .area__output-imgRes {
         width: 270px;
         height: 230px;
@@ -139,17 +127,15 @@
     .output__imgNotResult {
         width: 270px;
         height: 230px;
-
     }
 
     .output__textoTip {
         font-size: 22px;
         font-weight: 400;
     }
-    
+
     .output__mensajeTextoCopiado {
-        font-size: 28
-        px;
+        font-size: 28px;
         font-weight: 800;
         text-align: center;
     }
@@ -161,7 +147,6 @@
         width: 80dvw;
         height: 16rem;
         margin-top: 0rem;
-      
     }
 
     .area__output-imgRes {
@@ -174,7 +159,6 @@
     .output__imgNotResult {
         width: 180px;
         height: 150px;
-
     }
 
     .output__textoTip {
@@ -187,43 +171,30 @@
         font-weight: 800;
         text-align: center;
     }
-   
 }
-
-@media screen and (max-width: 600px) {  
    
-}
+@media screen and (max-width: 520px) {  
+    .area__output-imgRes {
+        width: 150px;
+        height: 110px;
+        grid-column: 1 /span 5;
+        grid-row: 11 / span 1;
+    }
 
-@media screen and (max-width: 480px) {  
-   
-}
+    .output__imgNotResult {
+        width: 150px;
+        height: 110px;
+    }
 
-@media screen and (max-width: 420px) {  
-   
-}
-
-@media screen and (max-width: 360px) {  
-   
-}
-
-@media screen and (max-width: 320px) {  
-   
-}
-
-
-/* 
-
-@media screen and (min-width:1280px) {
-    .area__output {
-        margin-top: 1rem;
-        width: 29dvw;
-        height: 38.4rem;
-        border-radius: 2rem;
-        padding: 20px;
-        left: 5px;
+    .output__textoTip {
+        font-size: 17px;
+        font-weight: 400;
     }
     
-   
+    .output__mensajeTextoCopiado {
+        font-size: 22px;
+        font-weight: 800;
+    }
 }
 
 
@@ -232,9 +203,3 @@
 
 
 
-
-
-
-
-
- */

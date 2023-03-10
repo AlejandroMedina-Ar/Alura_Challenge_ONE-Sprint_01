@@ -29,105 +29,84 @@
 /* -------------  Media Querys ---------------- */
 
 
-
 @media screen and (max-width:1378px) {  
     .input__btn-Enc, .input__btn-Desnc, .input__btn-Del, .output__btn-copiar {
-        
         width: 190px;
         height: 45px;
         border-radius: 1.3rem;
         border-width: 2.5px;
         font-size: 20px;
         font-weight: 800;
-    
     }
 }
+           
 
 @media screen and (max-width:1280px) {  
     .input__btn-Enc, .input__btn-Desnc, .input__btn-Del, .output__btn-copiar {
-        
         width: 185px;
         height: 40px;
         border-radius: 1.1rem;
         border-width: 2.1px;
         font-size: 18px;
         font-weight: 800;
-    
     }
 }
-
-@media screen and (max-width:1124px) {  
-   
-}
+         
 
 @media screen and (max-width:992px) {  
-   
+    .input__btn-Enc, .input__btn-Desnc, .input__btn-Del, .output__btn-copiar {
+        width: 180px;
+        height: 35px;
+        border-radius: 1.1rem;
+        border-width: 2.1px;
+        font-size: 18px;
+        font-weight: 800;
+    }
 }
-
+             
 @media screen and (max-width:768px) {  
 
     .input__btn-Enc, .input__btn-Desnc, .input__btn-Del, .output__btn-copiar {
-        
-        width: 195px;
-        height: 40px;
+        width: 180px;
+        height: 35px;
         border-radius: 1.1rem;
         border-width: 2.1px;
         font-size: 17px;
         font-weight: 800;
-    
     }
-   
 }
-
-@media screen and (max-width: 600px) {  
-   
-}
-
-@media screen and (max-width: 480px) {  
-   
-}
-
-@media screen and (max-width: 420px) {  
-   
-}
-
-@media screen and (max-width: 360px) {  
-
-    .input__btn-Enc, .input__btn-Desnc, .input__btn-Del, .output__btn-copiar {
         
-        width: 200px;
+@media screen and (max-width: 600px) {  
+    .input__btn-Enc, .input__btn-Desnc, .input__btn-Del, .output__btn-copiar {
+        width: 180px;
+        height: 35px;
+        border-radius: 1.1rem;
+        border-width: 2.1px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+}
+        
+@media screen and (max-width: 480px) {  
+    .input__btn-Enc, .input__btn-Desnc, .input__btn-Del, .output__btn-copiar {
+        width: 180px;
         height: 35px;
         border-radius: 1.1rem;
         border-width: 2.1px;
         font-size: 14px;
         font-weight: 800;
-    
     }
-   
-   
 }
 
-@media screen and (max-width: 320px) {  
-   
-}
-
-
-
-/* 
-@media screen and (min-width:1280px) {  
-
+@media screen and (max-width: 360px) {  
     .input__btn-Enc, .input__btn-Desnc, .input__btn-Del, .output__btn-copiar {
-        
-        width: 190px;
-        height: 50px;
+        width: 180px;
+        height: 35px;
         border-radius: 1.1rem;
-        border-color:#3D315B;
-        border-width: 3px;
-        font-size: 22px;
+        border-width: 2.1px;
+        font-size: 13px;
         font-weight: 800;
-    
     }
+}
 
-
-
-} */
+   

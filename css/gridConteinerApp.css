@@ -29,14 +29,21 @@
     .main__container {
         grid-template-columns: 1.6fr 1.1fr;
         grid-gap: 1rem;
-       
     }
 }
-
+       
 @media screen and (max-width:1280px) {  
-   
+    .grid__Container-Main {
+        width: 74vw;
+        min-height: 90dvh;
+    } 
+    
+    .main__container {
+        grid-template-columns: 1.7fr 1.2fr;
+        grid-gap: 1rem;
+    }
 }
-
+       
 @media screen and (max-width:1124px) {  
     .grid__Container-Main {
         width: 74vw;
@@ -46,10 +53,9 @@
     .main__container {
         grid-template-columns: 1.6fr 1.1fr;
         grid-gap: 1rem;
-       
     }
 }
-
+       
 @media screen and (max-width:992px) {  
     .grid__Container-Main {
         width: 85vw;
@@ -59,11 +65,9 @@
     .main__container {
         grid-template-columns: 1.8fr 1.4fr;
         grid-gap: 1rem;
-       
     }
-   
 }
-
+       
 @media screen and (max-width:768px) {  
     .grid__Container-Main {
         width: 98vw;
@@ -88,7 +92,6 @@
 }
 
 @media screen and (max-width: 600px) {  
-
     .grid__Container-Main {
         width: 98vw;
         min-height: 92dvh;
@@ -112,15 +115,12 @@
 }
 
 @media screen and (max-width: 480px) {  
-
     .grid__Container-Main {
-        
         display: grid;
         width: 98vw;
         min-height: 99dvh;
-        
     } 
-    
+        
     .main__container {
         display: grid;
         min-height: 70dvh;
@@ -131,23 +131,15 @@
         justify-items: center;
         align-content: flex-start;
     }
-   
 }
 
 @media screen and (max-width: 420px) {  
-   
-}
-
-@media screen and (max-width: 360px) {  
-    
     .grid__Container-Main {
-        
         display: grid;
         width: 98vw;
-        min-height: 60dvh;
-        
+        min-height: 99dvh;
     } 
-    
+      
     .main__container {
         display: grid;
         min-height: 70dvh;
@@ -158,9 +150,24 @@
         justify-items: center;
         align-content: flex-start;
     }
-   
 }
-
-@media screen and (max-width: 320px) {  
    
+@media screen and (max-width: 360px) {  
+    .grid__Container-Main {
+        display: grid;
+        width: 98vw;
+        min-height: 60dvh;
+    } 
+      
+    .main__container {
+        display: grid;
+        min-height: 70dvh;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+        background-color: #3D315B;
+        border-radius: 1.5rem;
+        justify-items: center;
+        align-content: flex-start;
+    }
 }
+   
