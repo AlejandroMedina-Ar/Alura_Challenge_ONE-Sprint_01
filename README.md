@@ -22,7 +22,7 @@
 
 ###
 
-<h3 align="left">Hecho con :</h3>
+<h3 align="left">Proyecto hecho con :</h3>
 
 ###
 
